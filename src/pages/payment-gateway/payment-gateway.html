@@ -1,0 +1,32 @@
+<ion-header class="custome-header">
+  <ion-navbar>
+    <button ion-button clear no-padding>
+      <ion-icon class="menu-icon">
+          <img src="../../assets/icon/back-arrow.png" class="wt-25">
+      </ion-icon>
+    </button>
+    <ion-title>Payment Gateway</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-bg">
+  <ion-card class="crad-total bg-transparent no-shadow">
+    <ion-card-header no-border>
+      <h2 class="font-20 text-left">Total amount to be paid : <span>$667</span></h2>
+    </ion-card-header>
+    <ion-card-content>
+      <hr class="line-design">
+      <form class="main-form payment-get-ht d-flex flex-column justify-between">
+        <div class="custome-radio">
+          <ion-item>
+            <ion-label>World Pay</ion-label>
+            <ion-radio checked="true" value="go"></ion-radio>
+          </ion-item>
+        </div>
+        <ion-item>
+          <button ion-button class="btn btn-common">Pay Now</button>
+        </ion-item>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,154 @@
+<ion-header class="custome-header">
+  <ion-navbar>
+    <!-- <button ion-button clear no-padding>
+      <ion-icon class="menu-icon">
+          <img src="../../assets/icon/back-arrow.png" class="wt-25">
+      </ion-icon>
+    </button> -->
+    <ion-title>Deals Details</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-bg">
+  <ion-card class="deal-card">
+    <ion-card-content no-padding>
+      <ion-slides pager>
+        <ion-slide>
+          <img src={{productData.product_img}}>
+        </ion-slide>
+        <ion-slide>
+          <img src={{productData.product_img}}>
+        </ion-slide>
+        <ion-slide>
+          <img src={{productData.product_img}}>
+        </ion-slide>
+      </ion-slides>
+      <div class="p10">
+        <h2 class="common-heading font-22">Product Name: {{productData.product_name}}</h2>
+        <div class="product-detail">
+          <p>
+            <strong>Price</strong><span class="color-dark">$698</span>
+          </p>
+          <p>
+            <strong>Price Checked</strong><span class="color-dark">dd-mm-yy</span>
+          </p>
+          <p>
+            <strong>Sale Perios</strong><span class="color-danger">Sales Over</span>
+          </p>
+        </div>
+
+        <hr class="line-design margin-vertical">
+
+        <h2 class="common-heading font-20">Description:</h2>
+        <p class="common-para color-dark font-17">Lorem ipsum dolor sit amet, stet facete principes 
+            at pri, ad est graeci dissentiet. Ei usu oratio 
+            deleniti detraxit. <a href="#" class="theme-link bold-600">View More..</a>
+        </p>
+        <hr class="line-design margin-vertical">
+        <p class="common-para color-dark font-17">Now to the system, click to know <a href="#" class="theme-link bold-600">How it work?</a>
+        </p>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-6>
+              <ion-card class="deal-card-box">
+                <ion-card-header no-padding>
+                  <ion-icon>
+                    <img src="assets/icon/deal-icon-1.png">
+                  </ion-icon>Cash Back
+                </ion-card-header>
+                <ion-card-content>
+                  <table class="table">
+                    <tr>
+                      <td>Quantity :</td>
+                      <td>1-10 = 10%</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>11-20 = 20%</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>21-30 = 30%</td>
+                    </tr>
+                  </table>
+                </ion-card-content>
+              </ion-card>              
+            </ion-col>
+            <ion-col col-6>
+              <ion-card class="deal-card-box">
+                <ion-card-header no-padding>
+                  <ion-icon>
+                    <img src="assets/icon/deal-icon-2.png">
+                  </ion-icon>Quantity to Inventory
+                </ion-card-header>
+                <ion-card-content>
+                  <table class="table">
+                    <tr>
+                      <td>Quantity :</td>
+                      <td>1-10 = 10%</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>11-20 = 20%</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>21-30 = 30%</td>
+                    </tr>
+                  </table>
+                </ion-card-content>
+              </ion-card>              
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col col-6>
+              <ion-card class="deal-card-box">
+                <ion-card-header no-padding>
+                  <ion-icon>
+                    <img src="assets/icon/deal-icon-3.png">
+                  </ion-icon>Estimated Current
+                </ion-card-header>
+                <ion-card-content>
+                    <table class="table table-detal">
+                      <tr>
+                        <td>
+                          <p>30% i.e $ 20.4</p>
+                        </td>
+                      </tr>
+                    </table>
+                </ion-card-content>
+              </ion-card>              
+            </ion-col>
+            <ion-col col-6>
+              <ion-card class="deal-card-box">
+                <ion-card-header no-padding>
+                  <ion-icon>
+                    <img src="assets/icon/deal-icon-4.png">
+                  </ion-icon>Delivery Detail
+                </ion-card-header>
+                <ion-card-content>
+                  <table class="table table-detal">
+                    <tr>
+                      <td>
+                        <p>Your product will be</p>
+                        <p>delivered on : dd-mm-yyyy</p>
+                      </td>
+                    </tr>
+                  </table>
+                </ion-card-content>
+              </ion-card>              
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-card-content>
+  </ion-card>
+  <div id="googleMap2" style="width:100%;height:200px"></div>
+  <div class="d-flex justify-between mb-10" padding-horizontal>
+    <button ion-button class="btn-common mLR-5 font-15 ht-40 border-wt-2">Rate your Vender</button>
+    <button ion-button class="btn-common mLR-5 font-15 ht-40 border-wt-2">Rate your product</button>
+  </div>
+  <div class="d-flex justify-center mb-10" padding-horizontal>
+    <button ion-button class="btn-common btn-block max-wt-300 font-16 ht-40 border-wt-2">Order Status</button>
+  </div>
+</ion-content>

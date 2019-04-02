@@ -1,0 +1,128 @@
+<ion-header class="custome-header">
+  <ion-navbar>
+    <ion-title>Validation Page</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <form class="main-form">
+    <ion-list no-lines no-margin>
+      <ion-item class="haserror">
+        <ion-input type="email" placeholder="Email ID" class="input-email"></ion-input>
+      </ion-item>
+      <span class="error">*Please enter valid email id.</span>
+      <ion-grid class="p-0">
+        <ion-row>
+          <ion-col col-6>
+            <ion-item class="haserror">
+              <ion-input class="green-field input-user-g-1" type="text" placeholder="First Name"></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col-6>
+            <ion-item class="haserror">
+              <ion-input class="green-field input-user-g-2" type="text" placeholder="Last Name"></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <span class="error">*Please enter your name</span>
+      </ion-grid>
+      <ion-grid class="p-0">
+        <ion-row>
+          <ion-col col-4>
+            <ion-item class="haserror">
+              <ion-select class="gray-field">
+                <ion-option value="+91" selected>+91</ion-option>
+                <ion-option value="+92">+92</ion-option>
+                <ion-option value="+93">+93</ion-option>
+                <ion-option value="+94">+94</ion-option>
+                <ion-option value="+95">+95</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-col>
+          <ion-col col-8>
+            <ion-item class="haserror">
+              <ion-input type="text" placeholder="Mobile No."></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <span class="error">*Please enter valid mobile number</span>
+      </ion-grid>
+      <ion-item class="haserror">
+        <ion-input class="green-field input-user-g-1" type="text" placeholder="Full Name"></ion-input>
+      </ion-item>
+      <span class="error">*Please enter your full name</span>
+      <ion-item class="haserror">
+        <ion-input type="password" placeholder="Password" class="input-password"></ion-input>
+      </ion-item>
+      <span class="error">*Please enter correct password</span>
+      <ion-item class="haserror">
+        <ion-textarea type="text" placeholder="Add Message" rows="6"></ion-textarea>
+      </ion-item>
+      <span class="error">*Please enter message</span>
+
+      <ion-item class="haserror">
+        <ion-input class="input-country" type="text" placeholder="Country"></ion-input>
+      </ion-item>
+      <span class="error">*Please enter country name</span>
+      <ion-item class="haserror">
+        <ion-input class="input-home" type="text" placeholder="House No."></ion-input>
+      </ion-item>
+      <span class="error">*Please enter house number</span>
+      <ion-item class="haserror">
+        <ion-select class="gray-field input-state">
+          <ion-option value="State 1" selected>State</ion-option>
+          <ion-option value="State 2">State 2</ion-option>
+          <ion-option value="State 3">State 3</ion-option>
+          <ion-option value="State 4">State 4</ion-option>
+          <ion-option value="State 5">State 5</ion-option>
+        </ion-select>
+      </ion-item>
+      <span class="error">*Please select state</span>
+      <ion-item class="haserror">
+        <ion-select class="gray-field input-city">
+          <ion-option value="City 1" selected>City</ion-option>
+          <ion-option value="City 2">City 2</ion-option>
+          <ion-option value="City 3">City 3</ion-option>
+          <ion-option value="City 4">City 4</ion-option>
+          <ion-option value="City 5">City 5</ion-option>
+        </ion-select>
+      </ion-item>
+      <span class="error">*Please select city</span>
+      <ion-item class="haserror">
+        <ion-input class="input-location" type="text" placeholder="Zip Code"></ion-input>
+      </ion-item>
+      <span class="error">*Please enter zip code</span>
+
+      <ion-grid class="p-0">
+        <ion-row>
+          <ion-col col>
+            <ion-item class="haserror">
+              <ion-input type="text" placeholder="xxxx" text-center></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col>
+            <ion-item class="haserror">
+              <ion-input type="text" placeholder="xxxx" text-center></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col>
+            <ion-item class="haserror">
+              <ion-input type="text" placeholder="xxxx" text-center></ion-input>
+            </ion-item>
+          </ion-col>
+          <ion-col col>
+            <ion-item class="haserror">
+              <ion-input type="text" placeholder="xxxx" text-center></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <span class="error">*Please enter valid OTP number</span>
+      </ion-grid>
+
+      <ion-item class="mt-15">
+        <button ion-button class="btn-common">SIGN IN</button>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>

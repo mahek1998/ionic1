@@ -1,0 +1,47 @@
+<ion-header class="custome-header">
+  <ion-navbar>
+    <!-- <button ion-button menuToggle>
+      <ion-icon class="menu-icon">
+        <img src="../../assets/icon/menu-icon.png">
+      </ion-icon>
+    </button> -->
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-bg" no-padding>
+  <div class="profile-imgbox">
+      <img src="assets/imgs/profile-image.png">
+  </div>
+  <ion-card card-common padding>
+    <ion-list class="profile-detail" no-margin>
+      <ion-item>
+        <ion-label>Full Name</ion-label>
+        <ion-label>{{userData.firstName}}  {{userData.lastName}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Email</ion-label>
+        <ion-label>bhardw@gmail.com</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Mobile Number</ion-label>
+        <ion-label>{{userData.mobileNo}}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Date of Birth</ion-label>
+        <ion-label>05/08/1989</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Gender</ion-label>
+        <ion-label>Femal</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-label>Address</ion-label>
+        <ion-label>586/6 New Delhi</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-card>
+  <ion-buttons class="button-box" padding-horizontal>
+    <button ion-button class="btn-common">EDIT PROFILE</button>
+  </ion-buttons>
+</ion-content>

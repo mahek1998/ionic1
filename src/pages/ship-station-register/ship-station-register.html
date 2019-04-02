@@ -1,0 +1,45 @@
+<ion-header class="custome-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon class="menu-icon">
+        <img src="../../assets/icon/icon-menu.png">
+      </ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-bg" padding>
+  
+  <div class="logo max-wt-180 mt0" text-center>
+    <img src="../../assets/imgs/logo-app.png" />
+  </div>
+
+  <ion-card class="product-info-card" text-center padding>
+    <ion-card-content class="product-info-content">
+      <p><strong>Select a ship station on the list*</strong></p>
+      <p>If you cannot find your ship station, please try entering your call sign or MMSI, otherwise you can contact</p>
+      <p><a href="mailto:sales@itu.int" class="mail-link">sales@itu.int</a></p>
+      
+      <form class="main-form">
+        <ion-list no-lines no-margin>
+          <ion-item>
+              <ion-label fixed>Enter ship name/ Call sign or mms!</ion-label>
+            <ion-input type="text" placeholder="Allisaac" class="input-ship"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label fixed>EMAIL ADDRESS</ion-label>
+            <ion-input type="email" placeholder="john.thomas@gmail.com" class="input-email"></ion-input>
+          </ion-item>
+          <ion-item class="custome-checkbox">
+            <ion-label>Send me news and notifications from BR</ion-label>
+            <ion-checkbox color="dark"></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <button ion-button class="btn-common">SUBMIT</button>
+          </ion-item>
+        </ion-list>
+      </form>
+
+    </ion-card-content>
+  </ion-card>  
+</ion-content>

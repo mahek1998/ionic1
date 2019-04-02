@@ -1,0 +1,44 @@
+<ion-header class="custome-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon class="menu-icon">
+          <img src="assets/icon/menu-icon.png">
+      </ion-icon>
+    </button>
+    <ion-title>Account Settings</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="main-bg">
+  <ion-card class="static-card min-h-auto">
+    <ion-card-content class="contact-details account-setting">
+       <ion-item class="d-flex">
+         <ion-icon class="wt-40" item-left>
+          <img src="assets/icon/notification-icon.png">
+         </ion-icon>
+         <p class="font-19">Notification</p>
+         <ion-toggle checked="true" class="theme-toggle" ></ion-toggle>
+       </ion-item>
+       <ion-item class="d-flex" >
+        <ion-icon class="wt-40" item-left>
+         <img src="assets/icon/user-icon.png" >
+        </ion-icon>
+        <p class="font-19" (click)="userProfile()">My Profile</p>
+      </ion-item>
+      <ion-item class="d-flex" >
+        <ion-icon class="wt-40" item-left>
+         <img src="assets/icon/changenumber-icon.png">
+        </ion-icon>
+        <p class="font-19" (click)="changeMobile()">Change Mobile Number</p>
+      </ion-item>
+      <ion-item class="d-flex" >
+        <ion-icon class="wt-40" item-left>
+         <img src="assets/icon/changepass-icon.png">
+        </ion-icon>
+        <p class="font-19" (click)="changePassword()">Change Password</p>
+      </ion-item>
+    </ion-card-content>
+  
+  </ion-card>
+</ion-content>

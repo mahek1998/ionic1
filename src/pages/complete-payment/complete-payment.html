@@ -1,0 +1,64 @@
+<ion-header class="custome-header">
+  <ion-navbar>
+    <button ion-button clear no-padding>
+      <ion-icon class="menu-icon">
+          <img src="../../assets/icon/back-arrow.png" class="wt-25">
+      </ion-icon>
+    </button>
+    <ion-title>Complete Your Payment</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="main-bg" padding>
+  <ion-card class="form-card bg-transparent m-0">
+    <ion-card-content>
+      <form class="main-form">
+        <ion-list no-lines no-margin>
+          <ion-item text-center no-margin>
+            <div class="imgbox-verify wt-170">
+              <img src="../../assets/icon/card.png">
+            </div>
+          </ion-item>
+          <ion-grid class="p-0">
+            <ion-row>
+              <ion-col col>
+                <ion-item>
+                    <h2 class="common-heading2 font-monst bold-600 text-left pL10" margin-vertical>Debit Card:</h2>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col>
+                <ion-item>
+                  <ion-input type="text" placeholder="Card Number"></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col>
+                <ion-item>
+                    <ion-input type="text" placeholder="Card Holder Name"></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col col-4>
+                <ion-item>
+                    <ion-input type="text" placeholder="MM/YY"></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col col-8>
+                <ion-item>
+                    <ion-input type="text" placeholder="CVV No."></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-item margin-vertical>
+            <button ion-button class="btn-common"  margin-vertical>PAY</button>
+          </ion-item>
+        </ion-list>
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

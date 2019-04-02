@@ -1,0 +1,86 @@
+<ion-header class="custome-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon class="menu-icon">
+          <img src="assets/icon/menu-icon.png">
+      </ion-icon>
+    </button>
+    <ion-title>Active Deals</ion-title>
+    <button ion-button clear class="f-right">
+      <ion-icon class="menu-icon wt-25">
+          <img src="assets/icon/filter-icon.png" >
+      </ion-icon>
+    </button>
+  </ion-navbar>
+  <ion-item class="search-item">
+    <ion-input type="text" placeholder="Search by offer name"></ion-input>
+  </ion-item>
+</ion-header>
+
+<ion-content class="main-bg">
+  
+  <ion-card *ngFor="let item of  this.dealsData">
+    <img src={{item.product_img}} (click)="deal(item)" >
+    <ion-card-content>
+      <div class="d-flex justify-end">
+      <ion-icon class="wt-50">
+          <img src="assets/icon/social-icon.png" >
+      </ion-icon>
+      </div>
+      <p class="common-para font-18">
+        <strong>Product Name:</strong>{{item.product_name}}<br>
+        <strong>Offer Name:</strong>The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p><br>
+      <strong>Address</strong>:{{item.address}}
+
+    </ion-card-content>
+  </ion-card>
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+
+  <ion-content>
+
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+      <ion-refresher-content></ion-refresher-content>
+    </ion-refresher>
+  
+  </ion-content>
+</ion-content>
+  <!-- <ion-list>
+    <ion-item *ngFor="let i of items">{{i}}</ion-item>
+  </ion-list> -->
+ 
+  
+
+  <!-- <ion-card>
+    <img src="../../assets/imgs/active-deals.jpg"  (click)="deal2()">
+    <ion-card-content>
+      <div class="d-flex justify-end">
+      <ion-icon class="wt-50">
+          <img src="../../assets/icon/social-icon.png">
+      </ion-icon>
+      </div>
+      <p class="common-para font-18">
+        <strong>Offer Name:</strong>The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <img src="../../assets/imgs/active-deals.jpg" (click)="deal1()">
+    <ion-card-content>
+      <div class="d-flex justify-end">
+      <ion-icon class="wt-50">
+          <img src="../../assets/icon/social-icon.png" >
+      </ion-icon>
+      </div>
+      <p class="common-para font-18">
+        <strong>Offer Name:</strong>The most popular industrial group ever, and largely
+        responsible for bringing the music to a mass audience.
+      </p>
+    </ion-card-content>
+  </ion-card> -->
+
+

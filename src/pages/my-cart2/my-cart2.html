@@ -1,0 +1,90 @@
+<ion-header class="custome-header">
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon class="menu-icon">
+        <img src="../../assets/icon/back-arrow.png">
+      </ion-icon>
+    </button>
+    <ion-title>My Cart</ion-title>
+    <button ion-button clear class="f-right">
+      <ion-icon class="menu-icon wt-20">
+        <img src="../../assets/icon/plus-icon.png">
+      </ion-icon>
+    </button>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="main-bg" no-padding>
+  <div class="d-flex flex-column mid-ht justify-between aligner-item-top">
+    <ion-card class="cart-card"> 
+      <ion-card-content no-padding>
+        <ion-grid>
+          <ion-row>
+            <ion-col col-7>
+              <h2 class="font-18 bold-600">Product Name</h2>
+              <div class="product-detail">
+                <p>Offer Name</p>
+                <p>dd-mm-yy</p>
+                <p>Price: $130.0</p>
+              </div>
+              <div class="select-quantity">
+                <h2>Select Quantity</h2>
+                <div class="quantity-box">
+                  <ion-icon class="wt-25">
+                    <img src="../../assets/icon/minus-circle.png">
+                  </ion-icon>
+                  <span class="w-40 font-18" text-center>01</span>
+                  <ion-icon class="wt-25">
+                    <img src="../../assets/icon/plus-circle.png">
+                  </ion-icon>
+                </div>
+              </div>
+            </ion-col>
+            <ion-col col-5>
+              <div class="d-flex justify-between mb-5">
+                <ion-icon class="wt-25">
+                  <img src="../../assets/icon/icon-doc.png">
+                </ion-icon>
+                <ion-icon class="wt-25">
+                  <img src="../assets/icon/info-icon.png">
+                </ion-icon>
+                <ion-icon class="wt-25">
+                  <img src="../../assets/icon/heart-empty-icon.png">
+                </ion-icon>
+                <ion-icon class="wt-25">
+                  <img src="../../assets/icon/delete-icon.png">
+                </ion-icon>
+              </div>
+              <img src="../../assets/imgs/cart-img.png">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+    
+
+    <div class="w-100">
+      <ion-card class="crad-total">
+        <ion-card-header>
+          <ion-icon class="wt-25 f-right">
+            <img src="../../assets/icon/edit-icon.png">
+          </ion-icon>
+          <h2>Total Amount : <span>$667</span></h2>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-list class="profile-detail mt-0" no-padding>
+            <ion-item class="aligner-item-top">
+              <ion-label>Delivery Address</ion-label>
+              <ion-label class="font-16" text-right text-wrap>586/6, vasantvila, Govindpuri, New Delhi, India - 110019</ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+      <div class="d-flex justify-between w-100 p10 pt0">
+        <button ion-button class="btn btn-common mLR-5 ht-55">Cancel</button>
+        <button ion-button class="btn btn-common mLR-5 ht-55">Contnue</button>
+      </div>
+    </div>
+  </div>
+</ion-content>
